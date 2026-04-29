@@ -62,7 +62,7 @@ html, body { width: 100%; height: 100%; overflow: hidden; background: #000; }
 
 /* ── Typography ── */
 .eyebrow {
-  font-size: clamp(10px, 1.1vw, 13px);
+  font-size: clamp(12px, 1.2vw, 15px);
   font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase;
   color: var(--accent); margin-bottom: 2rem;
 }
@@ -83,21 +83,21 @@ html, body { width: 100%; height: 100%; overflow: hidden; background: #000; }
   color: var(--off);
 }
 .label {
-  font-size: clamp(10px, 1vw, 12px);
+  font-size: clamp(12px, 1.1vw, 14px);
   font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase;
   color: var(--dim);
 }
 .body-lg {
-  font-size: clamp(14px, 1.6vw, 19px);
+  font-size: clamp(16px, 1.8vw, 21px);
   font-weight: 400; line-height: 1.7; color: var(--off);
 }
 .body-sm {
-  font-size: clamp(12px, 1.1vw, 14px);
+  font-size: clamp(14px, 1.25vw, 16px);
   font-weight: 400; line-height: 1.6; color: var(--dim);
 }
 .mono {
   font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: clamp(11px, 1vw, 13px); color: var(--accent);
+  font-size: clamp(13px, 1.15vw, 15px); color: var(--accent);
 }
 
 /* ── Sprite animations ── */
@@ -194,19 +194,19 @@ html, body { width: 100%; height: 100%; overflow: hidden; background: #000; }
 .tbl { width: 100%; border-collapse: collapse; }
 .tbl th {
   text-align: left; padding: 10px 14px;
-  font-size: 10px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+  font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
   color: var(--dim); border-bottom: 1px solid var(--border);
 }
 .tbl td {
   padding: 10px 14px;
-  font-size: clamp(11px, 1.1vw, 13px); color: var(--off);
+  font-size: clamp(13px, 1.25vw, 15px); color: var(--off);
   border-bottom: 1px solid rgba(255,255,255,0.06);
   vertical-align: top;
 }
 .tbl tr:last-child td { border-bottom: none; }
 .tbl tr:hover td { background: rgba(255,255,255,0.03); }
 .tbl .col-key { color: var(--white); font-weight: 500; }
-.tbl .col-accent { color: var(--accent); font-size: 11px; font-weight: 500; }
+.tbl .col-accent { color: var(--accent); font-size: 13px; font-weight: 500; }
 
 .divider-line {
   width: 100%; height: 1px;
@@ -262,7 +262,7 @@ html, body { width: 100%; height: 100%; overflow: hidden; background: #000; }
   padding: 4px 12px;
   border: 1px solid var(--border);
   border-radius: 4px;
-  font-size: 10px; font-weight: 600; letter-spacing: 0.14em;
+  font-size: 12px; font-weight: 600; letter-spacing: 0.14em;
   text-transform: uppercase; color: var(--dim);
   margin-bottom: 1.6rem;
 }
@@ -271,19 +271,19 @@ html, body { width: 100%; height: 100%; overflow: hidden; background: #000; }
 .gb-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
 .gb-col { display: flex; flex-direction: column; gap: 0.6rem; }
 .gb-header {
-  font-size: 11px; font-weight: 600; letter-spacing: 0.1em;
+  font-size: 13px; font-weight: 600; letter-spacing: 0.1em;
   text-transform: uppercase; padding-bottom: 8px;
   border-bottom: 1px solid var(--border);
 }
 .gb-header.good { color: var(--green); }
 .gb-header.bad  { color: var(--red); }
 .gb-body {
-  font-size: clamp(12px, 1.1vw, 14px); line-height: 1.7;
+  font-size: clamp(14px, 1.25vw, 16px); line-height: 1.7;
   color: var(--off);
 }
 .gb-tip {
   margin-top: 0.8rem; padding: 8px 12px;
-  border-radius: 6px; font-size: 11px;
+  border-radius: 6px; font-size: 13px;
 }
 .gb-tip.good { background: rgba(46,204,138,0.12); color: var(--green); }
 .gb-tip.bad  { background: rgba(255,77,77,0.12);  color: var(--red);   }
@@ -295,7 +295,7 @@ html, body { width: 100%; height: 100%; overflow: hidden; background: #000; }
   display: flex; flex-direction: column; gap: 1.2rem;
   overflow: hidden;
 }
-.content-full .title { font-size: clamp(20px, 2.5vw, 30px); margin-bottom: 0.6rem; }
+.content-full .title { font-size: clamp(22px, 2.7vw, 32px); margin-bottom: 0.6rem; }
 
 /* ── Feature Decomp ── */
 .feat-row {
@@ -309,18 +309,18 @@ html, body { width: 100%; height: 100%; overflow: hidden; background: #000; }
 }
 .feat-id {
   font-family: 'SF Mono', monospace;
-  font-size: 11px; font-weight: 700;
+  font-size: 13px; font-weight: 700;
   color: var(--accent); letter-spacing: 0.08em;
 }
-.feat-name { font-size: clamp(12px, 1.2vw, 14px); font-weight: 500; color: var(--white); }
-.feat-sub  { font-size: clamp(10px, 0.95vw, 12px); color: var(--dim); margin-top: 2px; }
+.feat-name { font-size: clamp(14px, 1.35vw, 16px); font-weight: 500; color: var(--white); }
+.feat-sub  { font-size: clamp(12px, 1.1vw, 14px); color: var(--dim); margin-top: 2px; }
 .feat-layer {
-  font-size: 10px; font-weight: 600; letter-spacing: 0.06em;
+  font-size: 12px; font-weight: 600; letter-spacing: 0.06em;
   text-transform: uppercase; color: var(--dim);
   white-space: nowrap;
 }
 .feat-mr {
-  font-size: 10px; color: rgba(255,205,0,0.6);
+  font-size: 12px; color: rgba(255,205,0,0.6);
   white-space: nowrap;
 }
 
@@ -330,14 +330,14 @@ html, body { width: 100%; height: 100%; overflow: hidden; background: #000; }
   background: rgba(245,158,11,0.1);
   border-left: 2px solid var(--orange);
   border-radius: 0 6px 6px 0;
-  font-size: clamp(11px, 1vw, 13px);
+  font-size: clamp(13px, 1.15vw, 15px);
   color: var(--orange); line-height: 1.6;
 }
 
 /* ── Checklist ── */
 .check-item {
   display: flex; align-items: flex-start; gap: 10px;
-  font-size: clamp(12px, 1.15vw, 14px); color: var(--off); line-height: 1.5;
+  font-size: clamp(14px, 1.3vw, 16px); color: var(--off); line-height: 1.5;
   padding: 6px 0;
 }
 .check-box {
@@ -346,7 +346,7 @@ html, body { width: 100%; height: 100%; overflow: hidden; background: #000; }
   margin-top: 1px;
 }
 .check-section {
-  font-size: 11px; font-weight: 600; letter-spacing: 0.1em;
+  font-size: 13px; font-weight: 600; letter-spacing: 0.1em;
   text-transform: uppercase; color: var(--accent);
   padding: 1rem 0 0.4rem;
 }
@@ -452,33 +452,33 @@ html, body { width: 100%; height: 100%; overflow: hidden; background: #000; }
     <div style="background:rgba(47,0,109,0.28); border:1px solid rgba(196,168,255,0.2); border-radius:8px; padding:10px 13px;">
       <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
         <span class="raci-cell raci-r" style="flex-shrink:0">R</span>
-        <span style="font-size:11px; font-weight:700; letter-spacing:0.06em; color:rgba(196,168,255,0.9)">실행 책임자</span>
+        <span style="font-size:15px; font-weight:700; letter-spacing:0.06em; color:rgba(196,168,255,0.9)">실행 책임자</span>
       </div>
-      <div class="body-sm" style="font-size:11px; line-height:1.55">해당 업무를 <strong style="color:rgba(255,255,255,0.75)">직접 수행</strong>하는 사람. 실제 산출물을 만들어내는 역할. 한 업무에 복수 지정 가능.</div>
+      <div class="body-sm" style="font-size:15px; line-height:1.55">해당 업무를 <strong style="color:rgba(255,255,255,0.75)">직접 수행</strong>하는 사람. 실제 산출물을 만들어내는 역할. 한 업무에 복수 지정 가능.</div>
     </div>
 
     <div style="background:rgba(255,77,77,0.1); border:1px solid rgba(255,112,112,0.2); border-radius:8px; padding:10px 13px;">
       <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
         <span class="raci-cell" style="flex-shrink:0; background:rgba(255,77,77,0.25); color:#FF7070">A</span>
-        <span style="font-size:11px; font-weight:700; letter-spacing:0.06em; color:rgba(255,112,112,0.9)">최종 승인자</span>
+        <span style="font-size:15px; font-weight:700; letter-spacing:0.06em; color:rgba(255,112,112,0.9)">최종 승인자</span>
       </div>
-      <div class="body-sm" style="font-size:11px; line-height:1.55">산출물의 <strong style="color:rgba(255,255,255,0.75)">최종 책임과 승인권</strong>을 갖는 사람. 업무당 반드시 <strong style="color:rgba(255,112,112,0.8)">1인만</strong> 지정. 결과에 대해 대외적으로 책임짐.</div>
+      <div class="body-sm" style="font-size:15px; line-height:1.55">산출물의 <strong style="color:rgba(255,255,255,0.75)">최종 책임과 승인권</strong>을 갖는 사람. 업무당 반드시 <strong style="color:rgba(255,112,112,0.8)">1인만</strong> 지정. 결과에 대해 대외적으로 책임짐.</div>
     </div>
 
     <div style="background:rgba(245,158,11,0.08); border:1px solid rgba(245,158,11,0.2); border-radius:8px; padding:10px 13px;">
       <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
         <span class="raci-cell raci-c" style="flex-shrink:0">C</span>
-        <span style="font-size:11px; font-weight:700; letter-spacing:0.06em; color:rgba(245,158,11,0.9)">협의 대상자</span>
+        <span style="font-size:15px; font-weight:700; letter-spacing:0.06em; color:rgba(245,158,11,0.9)">협의 대상자</span>
       </div>
-      <div class="body-sm" style="font-size:11px; line-height:1.55">의사결정 전 <strong style="color:rgba(255,255,255,0.75)">반드시 의견을 구해야</strong> 하는 전문가. 양방향 소통. 피드백이 산출물에 반영되어야 함.</div>
+      <div class="body-sm" style="font-size:15px; line-height:1.55">의사결정 전 <strong style="color:rgba(255,255,255,0.75)">반드시 의견을 구해야</strong> 하는 전문가. 양방향 소통. 피드백이 산출물에 반영되어야 함.</div>
     </div>
 
     <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:10px 13px;">
       <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
         <span class="raci-cell raci-i" style="flex-shrink:0">I</span>
-        <span style="font-size:11px; font-weight:700; letter-spacing:0.06em; color:rgba(255,255,255,0.42)">공유 대상자</span>
+        <span style="font-size:15px; font-weight:700; letter-spacing:0.06em; color:rgba(255,255,255,0.42)">공유 대상자</span>
       </div>
-      <div class="body-sm" style="font-size:11px; line-height:1.55">진행 상황과 결과를 <strong style="color:rgba(255,255,255,0.75)">통보받는</strong> 사람. 단방향 소통. 의견을 요구받지 않지만 결과를 알아야 하는 관계자.</div>
+      <div class="body-sm" style="font-size:15px; line-height:1.55">진행 상황과 결과를 <strong style="color:rgba(255,255,255,0.75)">통보받는</strong> 사람. 단방향 소통. 의견을 요구받지 않지만 결과를 알아야 하는 관계자.</div>
     </div>
 
   </div>
@@ -631,7 +631,7 @@ html, body { width: 100%; height: 100%; overflow: hidden; background: #000; }
     <div class="gb-col">
       <div class="gb-header good">✓ 잘 쓴 예시</div>
       <div class="gb-body">
-        <strong style="color:var(--green); font-size:12px">ESL 약국 솔루션</strong><br><br>
+        <strong style="color:var(--green); font-size:16px">ESL 약국 솔루션</strong><br><br>
         Solum PharmESL은 국내 대형 약국 체인을 대상으로 한 ESL + 의약품 추적 솔루션입니다.<br><br>
         글로벌 헬스케어 ESL 시장은 2024년 $3.2B 규모로 CAGR 18% 성장 중 <span style="color:var(--dim)">(Grand View Research, 2024)</span>. 약사법 개정(2025년)으로 냉장 의약품 온도 이력 관리가 의무화됩니다.<br><br>
         종이 라벨 대비 교체 시간 85% 절감 <span style="color:var(--dim)">(Texas Children's Hospital 사례)</span><br><br>
@@ -642,7 +642,7 @@ html, body { width: 100%; height: 100%; overflow: hidden; background: #000; }
     <div class="gb-col">
       <div class="gb-header bad">✗ 피해야 할 예시</div>
       <div class="gb-body">
-        <strong style="color:var(--red); font-size:12px">이렇게 쓰면 안 됩니다</strong><br><br>
+        <strong style="color:var(--red); font-size:16px">이렇게 쓰면 안 됩니다</strong><br><br>
         저희 새로운 ESL 제품은 약국 시장에서 큰 성공을 거둘 것으로 기대됩니다.<br><br>
         시장이 빠르게 성장하고 있고 경쟁사보다 우리 제품이 더 좋습니다.<br><br>
         많은 병원과 약국이 관심을 보이고 있으며 긍정적인 반응을 얻고 있습니다.<br><br>
